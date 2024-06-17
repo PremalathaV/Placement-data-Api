@@ -1,7 +1,9 @@
 const express = require('express');
 const data = require('./data');
+const cors = require('cors');
 
 const app = express();
+app.use(cors());
 const port = 3000;
 
 // API endpoint to filter experiences by company placed in
